@@ -1,5 +1,6 @@
 p.espace {
-  margin: 4% 0 1% 0; }
+  margin: 4% 0 1% 0;
+}
 
 .river {
   background: #32c5ee;
@@ -12,6 +13,8 @@ p.espace {
   width: 80%; }
 
 ul.dame {
+display: flex;
+justify-content: space-between;
   padding: 0;
   border: 1px solid black; }
   ul.dame li {
@@ -20,6 +23,8 @@ ul.dame {
     background: yellow; }
 
 ul.dame2 {
+    display: flex;
+    justify-content: space-around;
   padding: 0;
   border: 1px solid black; }
   ul.dame2 li {
@@ -28,6 +33,7 @@ ul.dame2 {
     background: yellow; }
 
 ul.dame3 {
+    display: flex;
   padding: 0;
   border: 1px solid black; }
   ul.dame3 li {
@@ -40,21 +46,43 @@ ul.dame3 {
     flex: 1; }
 
 ul.dame4 {
+ text-align: center;
   padding: 0;
   border: 1px solid black; }
   ul.dame4 li {
     list-style-type: none; }
 
 .river2 {
-  background: #32c5ee; }
+  background: #32c5ee;
+flex: 1;
+order: 2;
+}
 
 .bergeG, .bergeD {
   background: #248d30;
   color: white;
-  min-height: 100px; }
+  min-height: 100px;
+width: 25%;
+}
+
+.bergeG{
+    order: 1;
+}
+
+.bergeD{
+    order: 3;
+}
 
 .fond {
   background: url("../img/damier.png");
-  min-height: 350px; }
+  min-height: 350px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.country{
+    display: flex;
+}
 
 /*# sourceMappingURL=styles.css.map */
